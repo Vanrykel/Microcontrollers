@@ -1,0 +1,1416 @@
+--
+--	Conversion of SpectrumAnalyzer_NeoPixel.v to vh2:
+--
+--	Cypress Semiconductor - WARP Version 6.3 IR 41
+--	Sun Jan 05 17:33:14 2020
+--
+
+USE cypress.cypress.all;
+USE cypress.rtlpkg.all;
+ENTITY top_RTL IS
+ATTRIBUTE part_name of top_RTL:TYPE IS "cpsoc3";
+END top_RTL;
+--------------------------------------------------------
+ARCHITECTURE R_T_L OF top_RTL IS
+SIGNAL \ADC_SAR:Net_3125\ : bit;
+SIGNAL \ADC_SAR:Net_3126\ : bit;
+SIGNAL \ADC_SAR:Net_1845\ : bit;
+SIGNAL \ADC_SAR:Net_3112\ : bit;
+TERMINAL \ADC_SAR:Net_3123\ : bit;
+TERMINAL \ADC_SAR:Net_3121\ : bit;
+TERMINAL \ADC_SAR:Net_3117\ : bit;
+TERMINAL \ADC_SAR:Net_124\ : bit;
+TERMINAL \ADC_SAR:muxout_minus\ : bit;
+TERMINAL \ADC_SAR:Net_2020\ : bit;
+TERMINAL \ADC_SAR:muxout_plus\ : bit;
+TERMINAL \ADC_SAR:Net_3118\ : bit;
+TERMINAL \ADC_SAR:Net_3119\ : bit;
+TERMINAL \ADC_SAR:Net_3122\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_0\ : bit;
+TERMINAL \ADC_SAR:Net_1450_0\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_0\ : bit;
+TERMINAL \ADC_SAR:Net_1851\ : bit;
+TERMINAL \ADC_SAR:Net_3016\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_1\ : bit;
+TERMINAL \ADC_SAR:Net_3147\ : bit;
+TERMINAL \ADC_SAR:Net_3146\ : bit;
+TERMINAL \ADC_SAR:Net_3145\ : bit;
+TERMINAL \ADC_SAR:Net_3144\ : bit;
+TERMINAL \ADC_SAR:Net_3143\ : bit;
+TERMINAL \ADC_SAR:Net_3142\ : bit;
+TERMINAL \ADC_SAR:Net_3141\ : bit;
+TERMINAL \ADC_SAR:Net_3140\ : bit;
+TERMINAL \ADC_SAR:Net_3139\ : bit;
+TERMINAL \ADC_SAR:Net_3138\ : bit;
+TERMINAL \ADC_SAR:Net_3137\ : bit;
+TERMINAL \ADC_SAR:Net_3136\ : bit;
+TERMINAL \ADC_SAR:Net_3135\ : bit;
+TERMINAL \ADC_SAR:Net_3134\ : bit;
+TERMINAL \ADC_SAR:Net_3133\ : bit;
+TERMINAL \ADC_SAR:Net_3132\ : bit;
+TERMINAL \ADC_SAR:Net_3046\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_1\ : bit;
+TERMINAL \ADC_SAR:Net_3165\ : bit;
+SIGNAL \ADC_SAR:Net_3107\ : bit;
+SIGNAL \ADC_SAR:Net_3106\ : bit;
+SIGNAL \ADC_SAR:Net_3105\ : bit;
+SIGNAL \ADC_SAR:Net_3104\ : bit;
+SIGNAL \ADC_SAR:Net_3103\ : bit;
+TERMINAL \ADC_SAR:Net_3113\ : bit;
+TERMINAL \ADC_SAR:Net_43\ : bit;
+TERMINAL \ADC_SAR:Net_3225\ : bit;
+TERMINAL \ADC_SAR:Net_2375_0\ : bit;
+TERMINAL \ADC_SAR:Net_3181\ : bit;
+TERMINAL \ADC_SAR:Net_3180\ : bit;
+TERMINAL \ADC_SAR:Net_3179\ : bit;
+TERMINAL \ADC_SAR:Net_3178\ : bit;
+TERMINAL \ADC_SAR:Net_3177\ : bit;
+TERMINAL \ADC_SAR:Net_3176\ : bit;
+TERMINAL \ADC_SAR:Net_3175\ : bit;
+TERMINAL \ADC_SAR:Net_3174\ : bit;
+TERMINAL \ADC_SAR:Net_3173\ : bit;
+TERMINAL \ADC_SAR:Net_3172\ : bit;
+TERMINAL \ADC_SAR:Net_3171\ : bit;
+TERMINAL \ADC_SAR:Net_3170\ : bit;
+TERMINAL \ADC_SAR:Net_3169\ : bit;
+TERMINAL \ADC_SAR:Net_3168\ : bit;
+TERMINAL \ADC_SAR:Net_3167\ : bit;
+TERMINAL \ADC_SAR:Net_3166\ : bit;
+TERMINAL \ADC_SAR:Net_8\ : bit;
+SIGNAL \ADC_SAR:Net_17\ : bit;
+SIGNAL Net_665 : bit;
+SIGNAL \ADC_SAR:Net_3108\ : bit;
+SIGNAL \ADC_SAR:Net_3109_3\ : bit;
+SIGNAL \ADC_SAR:Net_3109_2\ : bit;
+SIGNAL \ADC_SAR:Net_3109_1\ : bit;
+SIGNAL \ADC_SAR:Net_3109_0\ : bit;
+SIGNAL \ADC_SAR:Net_3110\ : bit;
+SIGNAL \ADC_SAR:Net_3111_11\ : bit;
+SIGNAL \ADC_SAR:Net_3111_10\ : bit;
+SIGNAL \ADC_SAR:Net_3111_9\ : bit;
+SIGNAL \ADC_SAR:Net_3111_8\ : bit;
+SIGNAL \ADC_SAR:Net_3111_7\ : bit;
+SIGNAL \ADC_SAR:Net_3111_6\ : bit;
+SIGNAL \ADC_SAR:Net_3111_5\ : bit;
+SIGNAL \ADC_SAR:Net_3111_4\ : bit;
+SIGNAL \ADC_SAR:Net_3111_3\ : bit;
+SIGNAL \ADC_SAR:Net_3111_2\ : bit;
+SIGNAL \ADC_SAR:Net_3111_1\ : bit;
+SIGNAL \ADC_SAR:Net_3111_0\ : bit;
+SIGNAL Net_666 : bit;
+SIGNAL \ADC_SAR:Net_3207_1\ : bit;
+SIGNAL \ADC_SAR:Net_3207_0\ : bit;
+SIGNAL \ADC_SAR:Net_3235\ : bit;
+TERMINAL \ADC_SAR:Net_2580_0\ : bit;
+SIGNAL Net_5 : bit;
+TERMINAL Net_662 : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_2\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_3\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_4\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_5\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_6\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_7\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_8\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_9\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_10\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_11\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_12\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_13\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_14\ : bit;
+TERMINAL \ADC_SAR:mux_bus_plus_15\ : bit;
+TERMINAL Net_526 : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_2\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_3\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_4\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_5\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_6\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_7\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_8\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_9\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_10\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_11\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_12\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_13\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_14\ : bit;
+TERMINAL \ADC_SAR:mux_bus_minus_15\ : bit;
+TERMINAL \ADC_SAR:Net_3227\ : bit;
+SIGNAL tmpOE__Audio_In_net_0 : bit;
+SIGNAL zero : bit;
+SIGNAL tmpFB_0__Audio_In_net_0 : bit;
+TERMINAL Net_538 : bit;
+SIGNAL tmpIO_0__Audio_In_net_0 : bit;
+TERMINAL tmpSIOVREF__Audio_In_net_0 : bit;
+SIGNAL one : bit;
+SIGNAL tmpINTERRUPT_0__Audio_In_net_0 : bit;
+SIGNAL \PWM_Tick:Net_81\ : bit;
+SIGNAL \PWM_Tick:Net_75\ : bit;
+SIGNAL \PWM_Tick:Net_69\ : bit;
+SIGNAL \PWM_Tick:Net_66\ : bit;
+SIGNAL \PWM_Tick:Net_82\ : bit;
+SIGNAL \PWM_Tick:Net_72\ : bit;
+SIGNAL Net_675 : bit;
+SIGNAL Net_674 : bit;
+SIGNAL Net_676 : bit;
+SIGNAL Net_646 : bit;
+SIGNAL Net_677 : bit;
+SIGNAL Net_673 : bit;
+SIGNAL Net_607 : bit;
+SIGNAL tmpOE__Audio_In_Neg_net_0 : bit;
+SIGNAL tmpFB_0__Audio_In_Neg_net_0 : bit;
+SIGNAL tmpIO_0__Audio_In_Neg_net_0 : bit;
+TERMINAL tmpSIOVREF__Audio_In_Neg_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Audio_In_Neg_net_0 : bit;
+SIGNAL Net_644 : bit;
+SIGNAL \Control_Reg_NeoWrite:clk\ : bit;
+SIGNAL \Control_Reg_NeoWrite:rst\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_0\ : bit;
+SIGNAL Net_678 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_1\ : bit;
+SIGNAL Net_679 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_2\ : bit;
+SIGNAL Net_680 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_3\ : bit;
+SIGNAL Net_681 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_4\ : bit;
+SIGNAL Net_682 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_5\ : bit;
+SIGNAL Net_683 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_6\ : bit;
+SIGNAL Net_684 : bit;
+SIGNAL \Control_Reg_NeoWrite:control_out_7\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_7\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_6\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_5\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_4\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_3\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_2\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_1\ : bit;
+SIGNAL \Control_Reg_NeoWrite:control_0\ : bit;
+SIGNAL tmpOE__P04_net_0 : bit;
+SIGNAL Net_591 : bit;
+SIGNAL tmpFB_0__P04_net_0 : bit;
+SIGNAL tmpIO_0__P04_net_0 : bit;
+TERMINAL tmpSIOVREF__P04_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__P04_net_0 : bit;
+SIGNAL \StripLights:Net_7\ : bit;
+SIGNAL \StripLights:Net_18\ : bit;
+SIGNAL \StripLights:B_WS2811:npwmTC\ : bit;
+SIGNAL \StripLights:B_WS2811:pwmTC\ : bit;
+SIGNAL \StripLights:B_WS2811:zeroBit\ : bit;
+SIGNAL \StripLights:B_WS2811:zeroCmp\ : bit;
+SIGNAL \StripLights:B_WS2811:oneBit\ : bit;
+SIGNAL \StripLights:B_WS2811:oneCmp\ : bit;
+SIGNAL \StripLights:Net_64\ : bit;
+SIGNAL \StripLights:B_WS2811:dataOut\ : bit;
+SIGNAL \StripLights:B_WS2811:control_7\ : bit;
+SIGNAL \StripLights:B_WS2811:control_6\ : bit;
+SIGNAL \StripLights:B_WS2811:control_5\ : bit;
+SIGNAL \StripLights:B_WS2811:control_4\ : bit;
+SIGNAL \StripLights:B_WS2811:control_3\ : bit;
+SIGNAL \StripLights:B_WS2811:control_2\ : bit;
+SIGNAL \StripLights:B_WS2811:control_1\ : bit;
+SIGNAL \StripLights:B_WS2811:control_0\ : bit;
+SIGNAL \StripLights:B_WS2811:status_7\ : bit;
+SIGNAL \StripLights:B_WS2811:status_6\ : bit;
+SIGNAL \StripLights:B_WS2811:status_5\ : bit;
+SIGNAL \StripLights:B_WS2811:status_4\ : bit;
+SIGNAL \StripLights:B_WS2811:status_3\ : bit;
+SIGNAL \StripLights:B_WS2811:status_2\ : bit;
+SIGNAL \StripLights:B_WS2811:status_1\ : bit;
+SIGNAL \StripLights:B_WS2811:status_0\ : bit;
+SIGNAL \StripLights:B_WS2811:enable\ : bit;
+SIGNAL \StripLights:B_WS2811:restart\ : bit;
+SIGNAL \StripLights:Net_153\ : bit;
+SIGNAL \StripLights:B_WS2811:fifo_irq_en\ : bit;
+SIGNAL \StripLights:B_WS2811:xfrCmpt_irq_en\ : bit;
+SIGNAL \StripLights:B_WS2811:next_row\ : bit;
+SIGNAL \StripLights:B_WS2811:fifoEmpty\ : bit;
+SIGNAL \StripLights:B_WS2811:fifoNotFull\ : bit;
+SIGNAL \StripLights:B_WS2811:xferCmpt\ : bit;
+SIGNAL Net_611 : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_2\ : bit;
+SIGNAL \StripLights:B_WS2811:state_1\ : bit;
+SIGNAL \StripLights:B_WS2811:state_0\ : bit;
+SIGNAL \StripLights:B_WS2811:add_vv_vv_MODGEN_1_2\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_1\ : bit;
+SIGNAL \StripLights:B_WS2811:add_vv_vv_MODGEN_1_1\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_0\ : bit;
+SIGNAL \StripLights:B_WS2811:add_vv_vv_MODGEN_1_0\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_1\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_0\ : bit;
+SIGNAL \StripLights:B_WS2811:shiftOut\ : bit;
+SIGNAL \StripLights:B_WS2811:pwmCntl\ : bit;
+SIGNAL \StripLights:B_WS2811:dataOut\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:dataOut\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:xferCmpt\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:xferCmpt\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_2\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_2\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:state_1\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:state_1\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:state_0\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:state_0\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_1\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_1\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_0\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_0\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_1\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_1\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_0\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_0\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:pwmCntl\\R\ : bit;
+SIGNAL \StripLights:B_WS2811:pwmCntl\\S\ : bit;
+SIGNAL \StripLights:B_WS2811:dshifter:cs_addr_2\ : bit;
+SIGNAL \StripLights:B_WS2811:dshifter:ce0\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ce0\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:cl0\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:cl0\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:z0\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:z0\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ff0\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ff0\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ce1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ce1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:cl1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:cl1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:z1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:z1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ff1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ff1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ov_msb\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ov_msb\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:co_msb\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:co_msb\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:cmsb\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:cmsb\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:f1_bus_stat\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:f1_bus_stat\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:f1_blk_stat\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:f1_blk_stat\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ce0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ce0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:cl0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:cl0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:z0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:z0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ff0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ff0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ce1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ce1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:cl1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:cl1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:z1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:z1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ff1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ff1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:ov_msb_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:ov_msb_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:co_msb_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:co_msb_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:cmsb_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:cmsb_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:so_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:so_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:f0_bus_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:f0_bus_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:f0_blk_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:f0_blk_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:f1_bus_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:f1_bus_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:dshifter:f1_blk_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:dshifter:f1_blk_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:cs_addr_2\ : bit;
+SIGNAL \StripLights:B_WS2811:pwm8:ce0\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ce0\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ff0\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ff0\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ce1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ce1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:z1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:z1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ff1\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ff1\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ov_msb\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ov_msb\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:co_msb\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:co_msb\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:cmsb\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:cmsb\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:so\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:so\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f0_bus_stat\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f0_bus_stat\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f0_blk_stat\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f0_blk_stat\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f1_bus_stat\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f1_bus_stat\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f1_blk_stat\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f1_blk_stat\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ce0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ce0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:cl0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:cl0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:z0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:z0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ff0_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ff0_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ce1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ce1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:cl1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:cl1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:z1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:z1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ff1_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ff1_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:ov_msb_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:ov_msb_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:co_msb_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:co_msb_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:cmsb_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:cmsb_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:so_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:so_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f0_bus_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f0_bus_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f0_blk_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f0_blk_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f1_bus_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f1_bus_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:pwm8:f1_blk_stat_reg\ : bit;
+ATTRIBUTE port_state_att of \StripLights:B_WS2811:pwm8:f1_blk_stat_reg\:SIGNAL IS 2;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:a_2\ : bit;
+SIGNAL \StripLights:B_WS2811:MODIN1_2\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:a_1\ : bit;
+SIGNAL \StripLights:B_WS2811:MODIN1_1\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:a_0\ : bit;
+SIGNAL \StripLights:B_WS2811:MODIN1_0\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:b_2\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:b_1\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:b_0\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:s_2\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:s_1\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:s_0\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \StripLights:B_WS2811:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_0_reg\ : bit;
+SIGNAL \StripLights:saddr_3\ : bit;
+SIGNAL \StripLights:saddr_2\ : bit;
+SIGNAL \StripLights:saddr_1\ : bit;
+SIGNAL \StripLights:saddr_0\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_1_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_2_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_3_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_4_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_5_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_6_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_7_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_8_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_9_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_10_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_11_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_12_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_13_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_14_reg\ : bit;
+SIGNAL \StripLights:demux_1:tmp__demux_1_15_reg\ : bit;
+SIGNAL Net_592 : bit;
+SIGNAL Net_593 : bit;
+SIGNAL Net_594 : bit;
+SIGNAL Net_595 : bit;
+SIGNAL Net_596 : bit;
+SIGNAL Net_597 : bit;
+SIGNAL Net_598 : bit;
+SIGNAL Net_599 : bit;
+SIGNAL Net_600 : bit;
+SIGNAL Net_601 : bit;
+SIGNAL Net_602 : bit;
+SIGNAL Net_603 : bit;
+SIGNAL Net_604 : bit;
+SIGNAL Net_605 : bit;
+SIGNAL Net_606 : bit;
+SIGNAL \StripLights:StringSel:clk\ : bit;
+SIGNAL \StripLights:StringSel:rst\ : bit;
+SIGNAL \StripLights:StringSel:control_out_0\ : bit;
+SIGNAL \StripLights:StringSel:control_out_1\ : bit;
+SIGNAL \StripLights:StringSel:control_out_2\ : bit;
+SIGNAL \StripLights:StringSel:control_out_3\ : bit;
+SIGNAL \StripLights:Net_156\ : bit;
+SIGNAL \StripLights:StringSel:control_out_4\ : bit;
+SIGNAL \StripLights:Net_157\ : bit;
+SIGNAL \StripLights:StringSel:control_out_5\ : bit;
+SIGNAL \StripLights:Net_158\ : bit;
+SIGNAL \StripLights:StringSel:control_out_6\ : bit;
+SIGNAL \StripLights:Net_159\ : bit;
+SIGNAL \StripLights:StringSel:control_out_7\ : bit;
+SIGNAL \StripLights:StringSel:control_7\ : bit;
+SIGNAL \StripLights:StringSel:control_6\ : bit;
+SIGNAL \StripLights:StringSel:control_5\ : bit;
+SIGNAL \StripLights:StringSel:control_4\ : bit;
+SIGNAL \StripLights:StringSel:control_3\ : bit;
+SIGNAL \StripLights:StringSel:control_2\ : bit;
+SIGNAL \StripLights:StringSel:control_1\ : bit;
+SIGNAL \StripLights:StringSel:control_0\ : bit;
+TERMINAL \Opamp_Buffer:Net_9\ : bit;
+TERMINAL \Opamp_Buffer:Net_18\ : bit;
+TERMINAL \Opamp_Buffer:Net_29\ : bit;
+TERMINAL \Opamp_Buffer:Net_19\ : bit;
+SIGNAL \Opamp_Buffer:Net_12\ : bit;
+SIGNAL \StripLights:B_WS2811:dataOut\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:xferCmpt\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_2\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:state_1\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:state_0\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_1\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:bitCount_0\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_1\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:dpAddr_0\\D\ : bit;
+SIGNAL \StripLights:B_WS2811:pwmCntl\\D\ : bit;
+BEGIN
+
+zero <=  ('0') ;
+
+tmpOE__Audio_In_net_0 <=  ('1') ;
+
+Net_5 <= ((Net_646 and Net_644));
+
+Net_611 <= ((\StripLights:B_WS2811:control_4\ and \StripLights:B_WS2811:control_0\ and \StripLights:B_WS2811:status_6\)
+	OR (\StripLights:B_WS2811:control_3\ and \StripLights:B_WS2811:control_0\ and \StripLights:B_WS2811:status_0\));
+
+\StripLights:B_WS2811:bitCount_2\\D\ <= ((not \StripLights:B_WS2811:bitCount_2\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:bitCount_1\ and \StripLights:B_WS2811:bitCount_0\)
+	OR (not \StripLights:B_WS2811:bitCount_0\ and \StripLights:B_WS2811:bitCount_2\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:bitCount_1\ and \StripLights:B_WS2811:bitCount_2\ and \StripLights:B_WS2811:state_1\)
+	OR (\StripLights:B_WS2811:bitCount_2\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\)
+	OR (not \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:bitCount_2\ and \StripLights:B_WS2811:state_1\));
+
+\StripLights:B_WS2811:bitCount_1\\D\ <= ((not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:bitCount_1\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:bitCount_0\)
+	OR (not \StripLights:B_WS2811:bitCount_0\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:bitCount_1\)
+	OR (\StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:bitCount_1\)
+	OR (not \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:bitCount_1\));
+
+\StripLights:B_WS2811:bitCount_0\\D\ <= ((not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:bitCount_0\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\)
+	OR (\StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:bitCount_0\)
+	OR (not \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:bitCount_0\));
+
+\StripLights:B_WS2811:dpAddr_1\\D\ <= ((\StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:dpAddr_1\)
+	OR (not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:bitCount_0\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:bitCount_1\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:bitCount_2\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:state_1\));
+
+\StripLights:B_WS2811:dpAddr_0\\D\ <= ((\StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:dpAddr_0\)
+	OR (not \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\));
+
+\StripLights:B_WS2811:dataOut\\D\ <= ((not \StripLights:B_WS2811:zeroCmp\ and not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:shiftOut\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:oneCmp\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:shiftOut\)
+	OR (not \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\));
+
+\StripLights:B_WS2811:xferCmpt\\D\ <= ((\StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\));
+
+\StripLights:B_WS2811:pwmCntl\\D\ <= ((\StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:pwmCntl\)
+	OR (not \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:status_0\)
+	OR (not \StripLights:B_WS2811:control_0\ and not \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\));
+
+\StripLights:B_WS2811:state_1\\D\ <= ((not \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\)
+	OR (not \StripLights:B_WS2811:control_5\ and \StripLights:B_WS2811:state_0\)
+	OR (not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:bitCount_0\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:state_0\ and not \StripLights:B_WS2811:bitCount_1\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:bitCount_2\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:status_0\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:control_0\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:state_1\)
+	OR (not \StripLights:B_WS2811:pwmTC\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:state_1\));
+
+\StripLights:B_WS2811:state_0\\D\ <= ((not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:pwmTC\ and \StripLights:B_WS2811:bitCount_2\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:bitCount_1\ and \StripLights:B_WS2811:bitCount_0\)
+	OR (not \StripLights:B_WS2811:status_0\ and not \StripLights:B_WS2811:state_1\ and not \StripLights:B_WS2811:state_0\ and \StripLights:B_WS2811:control_0\)
+	OR (not \StripLights:B_WS2811:control_5\ and \StripLights:B_WS2811:state_1\ and \StripLights:B_WS2811:state_0\));
+
+Net_591 <= ((not \StripLights:saddr_3\ and not \StripLights:saddr_2\ and not \StripLights:saddr_1\ and not \StripLights:saddr_0\ and \StripLights:Net_64\));
+
+\ADC_SAR:IRQ\:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>\ADC_SAR:Net_3112\);
+\ADC_SAR:cy_analog_noconnect_44\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3123\);
+\ADC_SAR:cy_analog_noconnect_40\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3121\);
+\ADC_SAR:cy_analog_noconnect_39\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3117\);
+\ADC_SAR:cy_analog_virtualmux_43_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_124\,
+		signal2=>\ADC_SAR:muxout_minus\);
+\ADC_SAR:cy_analog_virtualmux_42_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_2020\,
+		signal2=>\ADC_SAR:muxout_plus\);
+\ADC_SAR:cy_analog_noconnect_38\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3118\);
+\ADC_SAR:cy_analog_noconnect_41\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3119\);
+\ADC_SAR:cy_analog_noconnect_43\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3122\);
+\ADC_SAR:adc_plus_in_sel_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:muxout_plus\,
+		signal2=>\ADC_SAR:mux_bus_plus_0\);
+\ADC_SAR:Connect_1:bus_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>(\ADC_SAR:mux_bus_plus_0\),
+		signal2=>(\ADC_SAR:Net_1450_0\));
+\ADC_SAR:adc_minus_in_sel_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:muxout_minus\,
+		signal2=>\ADC_SAR:mux_bus_minus_0\);
+\ADC_SAR:cy_analog_noconnect_3\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_1851\);
+\ADC_SAR:cy_analog_virtualmux_37_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_3016\,
+		signal2=>\ADC_SAR:mux_bus_plus_1\);
+\ADC_SAR:cy_analog_noconnect_21\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3147\);
+\ADC_SAR:cy_analog_noconnect_20\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3146\);
+\ADC_SAR:cy_analog_noconnect_19\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3145\);
+\ADC_SAR:cy_analog_noconnect_18\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3144\);
+\ADC_SAR:cy_analog_noconnect_17\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3143\);
+\ADC_SAR:cy_analog_noconnect_16\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3142\);
+\ADC_SAR:cy_analog_noconnect_15\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3141\);
+\ADC_SAR:cy_analog_noconnect_14\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3140\);
+\ADC_SAR:cy_analog_noconnect_13\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3139\);
+\ADC_SAR:cy_analog_noconnect_12\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3138\);
+\ADC_SAR:cy_analog_noconnect_11\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3137\);
+\ADC_SAR:cy_analog_noconnect_10\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3136\);
+\ADC_SAR:cy_analog_noconnect_9\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3135\);
+\ADC_SAR:cy_analog_noconnect_8\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3134\);
+\ADC_SAR:cy_analog_noconnect_7\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3133\);
+\ADC_SAR:cy_analog_noconnect_6\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3132\);
+\ADC_SAR:cy_analog_virtualmux_36_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_3046\,
+		signal2=>\ADC_SAR:mux_bus_minus_1\);
+\ADC_SAR:cy_analog_noconnect_37\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3165\);
+\ADC_SAR:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3113\);
+\ADC_SAR:ext_vref_sel_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_43\,
+		signal2=>\ADC_SAR:Net_3225\);
+\ADC_SAR:Connect_2:bus_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>(\ADC_SAR:mux_bus_minus_0\),
+		signal2=>(\ADC_SAR:Net_2375_0\));
+\ADC_SAR:cy_analog_noconnect_35\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3181\);
+\ADC_SAR:cy_analog_noconnect_34\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3180\);
+\ADC_SAR:cy_analog_noconnect_33\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3179\);
+\ADC_SAR:cy_analog_noconnect_32\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3178\);
+\ADC_SAR:cy_analog_noconnect_31\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3177\);
+\ADC_SAR:cy_analog_noconnect_30\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3176\);
+\ADC_SAR:cy_analog_noconnect_29\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3175\);
+\ADC_SAR:cy_analog_noconnect_28\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3174\);
+\ADC_SAR:cy_analog_noconnect_27\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3173\);
+\ADC_SAR:cy_analog_noconnect_26\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3172\);
+\ADC_SAR:cy_analog_noconnect_25\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3171\);
+\ADC_SAR:cy_analog_noconnect_24\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3170\);
+\ADC_SAR:cy_analog_noconnect_23\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3169\);
+\ADC_SAR:cy_analog_noconnect_22\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3168\);
+\ADC_SAR:cy_analog_noconnect_4\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3167\);
+\ADC_SAR:cy_analog_noconnect_2\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3166\);
+\ADC_SAR:int_vref_sel_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_8\,
+		signal2=>\ADC_SAR:Net_3113\);
+\ADC_SAR:cy_psoc4_sar\:cy_psoc4_sar_v1_0
+	GENERIC MAP(cy_registers=>"")
+	PORT MAP(vplus=>\ADC_SAR:Net_2020\,
+		vminus=>\ADC_SAR:Net_124\,
+		vref=>\ADC_SAR:Net_8\,
+		ext_vref=>\ADC_SAR:Net_43\,
+		clock=>\ADC_SAR:Net_1845\,
+		sample_done=>Net_665,
+		chan_id_valid=>\ADC_SAR:Net_3108\,
+		chan_id=>(\ADC_SAR:Net_3109_3\, \ADC_SAR:Net_3109_2\, \ADC_SAR:Net_3109_1\, \ADC_SAR:Net_3109_0\),
+		data_valid=>\ADC_SAR:Net_3110\,
+		data=>(\ADC_SAR:Net_3111_11\, \ADC_SAR:Net_3111_10\, \ADC_SAR:Net_3111_9\, \ADC_SAR:Net_3111_8\,
+			\ADC_SAR:Net_3111_7\, \ADC_SAR:Net_3111_6\, \ADC_SAR:Net_3111_5\, \ADC_SAR:Net_3111_4\,
+			\ADC_SAR:Net_3111_3\, \ADC_SAR:Net_3111_2\, \ADC_SAR:Net_3111_1\, \ADC_SAR:Net_3111_0\),
+		eos_intr=>Net_666,
+		irq=>\ADC_SAR:Net_3112\,
+		sw_negvref=>zero,
+		cfg_st_sel=>(zero, zero),
+		cfg_average=>zero,
+		cfg_resolution=>zero,
+		cfg_differential=>zero,
+		trigger=>Net_5,
+		data_hilo_sel=>zero);
+\ADC_SAR:ext_vneg_sel_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>(\ADC_SAR:Net_2580_0\),
+		signal2=>\ADC_SAR:Net_1851\);
+\ADC_SAR:cy_analog_virtualmux_vplus0_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_0\,
+		signal2=>Net_662);
+\ADC_SAR:cy_analog_virtualmux_vplus1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_1\,
+		signal2=>\ADC_SAR:Net_3132\);
+\ADC_SAR:cy_analog_virtualmux_vplus2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_2\,
+		signal2=>\ADC_SAR:Net_3133\);
+\ADC_SAR:cy_analog_virtualmux_vplus3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_3\,
+		signal2=>\ADC_SAR:Net_3134\);
+\ADC_SAR:cy_analog_virtualmux_vplus4_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_4\,
+		signal2=>\ADC_SAR:Net_3135\);
+\ADC_SAR:cy_analog_virtualmux_vplus5_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_5\,
+		signal2=>\ADC_SAR:Net_3136\);
+\ADC_SAR:cy_analog_virtualmux_vplus6_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_6\,
+		signal2=>\ADC_SAR:Net_3137\);
+\ADC_SAR:cy_analog_virtualmux_vplus7_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_7\,
+		signal2=>\ADC_SAR:Net_3138\);
+\ADC_SAR:cy_analog_virtualmux_vplus8_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_8\,
+		signal2=>\ADC_SAR:Net_3139\);
+\ADC_SAR:cy_analog_virtualmux_vplus9_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_9\,
+		signal2=>\ADC_SAR:Net_3140\);
+\ADC_SAR:cy_analog_virtualmux_vplus10_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_10\,
+		signal2=>\ADC_SAR:Net_3141\);
+\ADC_SAR:cy_analog_virtualmux_vplus11_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_11\,
+		signal2=>\ADC_SAR:Net_3142\);
+\ADC_SAR:cy_analog_virtualmux_vplus12_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_12\,
+		signal2=>\ADC_SAR:Net_3143\);
+\ADC_SAR:cy_analog_virtualmux_vplus13_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_13\,
+		signal2=>\ADC_SAR:Net_3144\);
+\ADC_SAR:cy_analog_virtualmux_vplus14_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_14\,
+		signal2=>\ADC_SAR:Net_3145\);
+\ADC_SAR:cy_analog_virtualmux_vplus15_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_plus_15\,
+		signal2=>\ADC_SAR:Net_3146\);
+\ADC_SAR:cy_analog_virtualmux_vplus_inj_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_3016\,
+		signal2=>\ADC_SAR:Net_3147\);
+\ADC_SAR:cy_analog_virtualmux_vminus0_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_0\,
+		signal2=>Net_526);
+\ADC_SAR:cy_analog_virtualmux_vminus1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_1\,
+		signal2=>\ADC_SAR:Net_3167\);
+\ADC_SAR:cy_analog_virtualmux_vminus2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_2\,
+		signal2=>\ADC_SAR:Net_3168\);
+\ADC_SAR:cy_analog_virtualmux_vminus3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_3\,
+		signal2=>\ADC_SAR:Net_3169\);
+\ADC_SAR:cy_analog_virtualmux_vminus4_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_4\,
+		signal2=>\ADC_SAR:Net_3170\);
+\ADC_SAR:cy_analog_virtualmux_vminus5_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_5\,
+		signal2=>\ADC_SAR:Net_3171\);
+\ADC_SAR:cy_analog_virtualmux_vminus6_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_6\,
+		signal2=>\ADC_SAR:Net_3172\);
+\ADC_SAR:cy_analog_virtualmux_vminus7_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_7\,
+		signal2=>\ADC_SAR:Net_3173\);
+\ADC_SAR:cy_analog_virtualmux_vminus8_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_8\,
+		signal2=>\ADC_SAR:Net_3174\);
+\ADC_SAR:cy_analog_virtualmux_vminus9_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_9\,
+		signal2=>\ADC_SAR:Net_3175\);
+\ADC_SAR:cy_analog_virtualmux_vminus10_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_10\,
+		signal2=>\ADC_SAR:Net_3176\);
+\ADC_SAR:cy_analog_virtualmux_vminus11_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_11\,
+		signal2=>\ADC_SAR:Net_3177\);
+\ADC_SAR:cy_analog_virtualmux_vminus12_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_12\,
+		signal2=>\ADC_SAR:Net_3178\);
+\ADC_SAR:cy_analog_virtualmux_vminus13_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_13\,
+		signal2=>\ADC_SAR:Net_3179\);
+\ADC_SAR:cy_analog_virtualmux_vminus14_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_14\,
+		signal2=>\ADC_SAR:Net_3180\);
+\ADC_SAR:cy_analog_virtualmux_vminus15_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:mux_bus_minus_15\,
+		signal2=>\ADC_SAR:Net_3181\);
+\ADC_SAR:cy_analog_virtualmux_vminus_inj_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\ADC_SAR:Net_3046\,
+		signal2=>\ADC_SAR:Net_3165\);
+\ADC_SAR:intClock\:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"13894258-93f2-425c-a92d-5faffaf1154d/5c71752a-e182-47ca-942c-9cb20adbdf2f",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"333333333.333333",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>\ADC_SAR:Net_1845\,
+		dig_domain_out=>open);
+\ADC_SAR:cy_analog_noconnect_5\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\ADC_SAR:Net_3227\);
+Audio_In:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"05a9c8de-3ba2-4909-8250-95fdc61c0bf4",
+		drive_mode=>"000",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"A",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(tmpOE__Audio_In_net_0),
+		y=>(zero),
+		fb=>(tmpFB_0__Audio_In_net_0),
+		analog=>Net_538,
+		io=>(tmpIO_0__Audio_In_net_0),
+		siovref=>(tmpSIOVREF__Audio_In_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>tmpOE__Audio_In_net_0,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>tmpOE__Audio_In_net_0,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Audio_In_net_0);
+\PWM_Tick:cy_m0s8_tcpwm_1\:cy_m0s8_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"")
+	PORT MAP(clock=>Net_607,
+		capture=>zero,
+		count=>tmpOE__Audio_In_net_0,
+		reload=>zero,
+		stop=>zero,
+		start=>zero,
+		underflow=>Net_675,
+		overflow=>Net_674,
+		compare_match=>Net_676,
+		line_out=>Net_646,
+		line_out_compl=>Net_677,
+		interrupt=>Net_673);
+Clock_1:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"7ec395a9-7516-46db-a8c3-663480e12b02",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"83333333.3333333",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_607,
+		dig_domain_out=>open);
+Audio_In_Neg:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"4605a049-78ef-4cc6-8d6e-569ac0354daf",
+		drive_mode=>"000",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"A",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(tmpOE__Audio_In_net_0),
+		y=>(zero),
+		fb=>(tmpFB_0__Audio_In_Neg_net_0),
+		analog=>Net_526,
+		io=>(tmpIO_0__Audio_In_Neg_net_0),
+		siovref=>(tmpSIOVREF__Audio_In_Neg_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>tmpOE__Audio_In_net_0,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>tmpOE__Audio_In_net_0,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Audio_In_Neg_net_0);
+\Control_Reg_NeoWrite:Sync:ctrl_reg\:cy_psoc3_control
+	GENERIC MAP(cy_init_value=>"00000001",
+		cy_force_order=>'1',
+		cy_ctrl_mode_1=>"00000000",
+		cy_ctrl_mode_0=>"00000000",
+		cy_ext_reset=>'0')
+	PORT MAP(reset=>zero,
+		clock=>zero,
+		control=>(\Control_Reg_NeoWrite:control_7\, \Control_Reg_NeoWrite:control_6\, \Control_Reg_NeoWrite:control_5\, \Control_Reg_NeoWrite:control_4\,
+			\Control_Reg_NeoWrite:control_3\, \Control_Reg_NeoWrite:control_2\, \Control_Reg_NeoWrite:control_1\, Net_644));
+P04:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"52f31aa9-2f0a-497d-9a1f-1424095e13e6",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"1",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(tmpOE__Audio_In_net_0),
+		y=>Net_591,
+		fb=>(tmpFB_0__P04_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__P04_net_0),
+		siovref=>(tmpSIOVREF__P04_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>tmpOE__Audio_In_net_0,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>tmpOE__Audio_In_net_0,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__P04_net_0);
+\StripLights:Clock\:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"17593bd9-adcf-433b-ba5d-7440cfd3901d/33095dfc-d647-4d48-9404-bcf14e8add06",
+		source_clock_id=>"413DE2EF-D9F2-4233-A808-DFAF137FD877",
+		divisor=>0,
+		period=>"0",
+		is_direct=>'1',
+		is_digital=>'0')
+	PORT MAP(clock_out=>\StripLights:Net_18\,
+		dig_domain_out=>open);
+\StripLights:B_WS2811:ctrl\:cy_psoc3_control
+	GENERIC MAP(cy_init_value=>"00000000",
+		cy_force_order=>'1',
+		cy_ctrl_mode_1=>"00000000",
+		cy_ctrl_mode_0=>"00000000",
+		cy_ext_reset=>'0')
+	PORT MAP(reset=>zero,
+		clock=>zero,
+		control=>(\StripLights:B_WS2811:control_7\, \StripLights:B_WS2811:control_6\, \StripLights:B_WS2811:control_5\, \StripLights:B_WS2811:control_4\,
+			\StripLights:B_WS2811:control_3\, \StripLights:B_WS2811:control_2\, \StripLights:B_WS2811:control_1\, \StripLights:B_WS2811:control_0\));
+\StripLights:B_WS2811:StatusReg\:cy_psoc3_status
+	GENERIC MAP(cy_force_order=>'1',
+		cy_md_select=>"00000000")
+	PORT MAP(reset=>zero,
+		clock=>\StripLights:Net_18\,
+		status=>(\StripLights:B_WS2811:control_0\, \StripLights:B_WS2811:status_6\, zero, zero,
+			zero, zero, \StripLights:B_WS2811:status_1\, \StripLights:B_WS2811:status_0\));
+\StripLights:B_WS2811:dshifter:u0\:cy_psoc3_dp
+	GENERIC MAP(cy_dpconfig=>"0000000000000000000000001100000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111000000000000000000000000000000000000000000000000",
+		d0_init=>"00000000",
+		d1_init=>"00000000",
+		a0_init=>"00000000",
+		a1_init=>"00000000",
+		ce0_sync=>'1',
+		cl0_sync=>'1',
+		z0_sync=>'1',
+		ff0_sync=>'1',
+		ce1_sync=>'1',
+		cl1_sync=>'1',
+		z1_sync=>'1',
+		ff1_sync=>'1',
+		ov_msb_sync=>'1',
+		co_msb_sync=>'1',
+		cmsb_sync=>'1',
+		so_sync=>'1',
+		f0_bus_sync=>'1',
+		f0_blk_sync=>'1',
+		f1_bus_sync=>'1',
+		f1_blk_sync=>'1')
+	PORT MAP(reset=>zero,
+		clk=>\StripLights:Net_18\,
+		cs_addr=>(zero, \StripLights:B_WS2811:dpAddr_1\, \StripLights:B_WS2811:dpAddr_0\),
+		route_si=>zero,
+		route_ci=>zero,
+		f0_load=>zero,
+		f1_load=>zero,
+		d0_load=>zero,
+		d1_load=>zero,
+		ce0=>open,
+		cl0=>open,
+		z0=>open,
+		ff0=>open,
+		ce1=>open,
+		cl1=>open,
+		z1=>open,
+		ff1=>open,
+		ov_msb=>open,
+		co_msb=>open,
+		cmsb=>open,
+		so=>\StripLights:B_WS2811:shiftOut\,
+		f0_bus_stat=>\StripLights:B_WS2811:status_1\,
+		f0_blk_stat=>\StripLights:B_WS2811:status_0\,
+		f1_bus_stat=>open,
+		f1_blk_stat=>open,
+		ce0_reg=>open,
+		cl0_reg=>open,
+		z0_reg=>open,
+		ff0_reg=>open,
+		ce1_reg=>open,
+		cl1_reg=>open,
+		z1_reg=>open,
+		ff1_reg=>open,
+		ov_msb_reg=>open,
+		co_msb_reg=>open,
+		cmsb_reg=>open,
+		so_reg=>open,
+		f0_bus_stat_reg=>open,
+		f0_blk_stat_reg=>open,
+		f1_bus_stat_reg=>open,
+		f1_blk_stat_reg=>open,
+		ci=>zero,
+		co=>open,
+		sir=>zero,
+		sor=>open,
+		sil=>zero,
+		sol=>open,
+		msbi=>zero,
+		msbo=>open,
+		cei=>(zero, zero),
+		ceo=>open,
+		cli=>(zero, zero),
+		clo=>open,
+		zi=>(zero, zero),
+		zo=>open,
+		fi=>(zero, zero),
+		fo=>open,
+		capi=>(zero, zero),
+		capo=>open,
+		cfbi=>zero,
+		cfbo=>open,
+		pi=>(zero, zero, zero, zero,
+			zero, zero, zero, zero),
+		po=>open);
+\StripLights:B_WS2811:pwm8:u0\:cy_psoc3_dp
+	GENERIC MAP(cy_dpconfig=>"0100000001000000000000001100000000000000110000000000000011000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111101000000000000000000000000000000000000000000000",
+		d0_init=>"00010100",
+		d1_init=>"00001100",
+		a0_init=>"00011000",
+		a1_init=>"00011000",
+		ce0_sync=>'1',
+		cl0_sync=>'1',
+		z0_sync=>'1',
+		ff0_sync=>'1',
+		ce1_sync=>'1',
+		cl1_sync=>'1',
+		z1_sync=>'1',
+		ff1_sync=>'1',
+		ov_msb_sync=>'1',
+		co_msb_sync=>'1',
+		cmsb_sync=>'1',
+		so_sync=>'1',
+		f0_bus_sync=>'1',
+		f0_blk_sync=>'1',
+		f1_bus_sync=>'1',
+		f1_blk_sync=>'1')
+	PORT MAP(reset=>zero,
+		clk=>\StripLights:Net_18\,
+		cs_addr=>(zero, \StripLights:B_WS2811:pwmCntl\, \StripLights:B_WS2811:pwmTC\),
+		route_si=>zero,
+		route_ci=>zero,
+		f0_load=>zero,
+		f1_load=>zero,
+		d0_load=>zero,
+		d1_load=>zero,
+		ce0=>open,
+		cl0=>\StripLights:B_WS2811:zeroCmp\,
+		z0=>\StripLights:B_WS2811:pwmTC\,
+		ff0=>open,
+		ce1=>open,
+		cl1=>\StripLights:B_WS2811:oneCmp\,
+		z1=>open,
+		ff1=>open,
+		ov_msb=>open,
+		co_msb=>open,
+		cmsb=>open,
+		so=>open,
+		f0_bus_stat=>open,
+		f0_blk_stat=>open,
+		f1_bus_stat=>open,
+		f1_blk_stat=>open,
+		ce0_reg=>open,
+		cl0_reg=>open,
+		z0_reg=>open,
+		ff0_reg=>open,
+		ce1_reg=>open,
+		cl1_reg=>open,
+		z1_reg=>open,
+		ff1_reg=>open,
+		ov_msb_reg=>open,
+		co_msb_reg=>open,
+		cmsb_reg=>open,
+		so_reg=>open,
+		f0_bus_stat_reg=>open,
+		f0_blk_stat_reg=>open,
+		f1_bus_stat_reg=>open,
+		f1_blk_stat_reg=>open,
+		ci=>zero,
+		co=>open,
+		sir=>zero,
+		sor=>open,
+		sil=>zero,
+		sol=>open,
+		msbi=>zero,
+		msbo=>open,
+		cei=>(zero, zero),
+		ceo=>open,
+		cli=>(zero, zero),
+		clo=>open,
+		zi=>(zero, zero),
+		zo=>open,
+		fi=>(zero, zero),
+		fo=>open,
+		capi=>(zero, zero),
+		capo=>open,
+		cfbi=>zero,
+		cfbo=>open,
+		pi=>(zero, zero, zero, zero,
+			zero, zero, zero, zero),
+		po=>open);
+\StripLights:isr\:cy_isr_v1_0
+	GENERIC MAP(int_type=>"00",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_611);
+\StripLights:StringSel:Sync:ctrl_reg\:cy_psoc3_control
+	GENERIC MAP(cy_init_value=>"00000000",
+		cy_force_order=>'1',
+		cy_ctrl_mode_1=>"00000000",
+		cy_ctrl_mode_0=>"00000000",
+		cy_ext_reset=>'0')
+	PORT MAP(reset=>zero,
+		clock=>zero,
+		control=>(\StripLights:StringSel:control_7\, \StripLights:StringSel:control_6\, \StripLights:StringSel:control_5\, \StripLights:StringSel:control_4\,
+			\StripLights:saddr_3\, \StripLights:saddr_2\, \StripLights:saddr_1\, \StripLights:saddr_0\));
+\Opamp_Buffer:cy_psoc4_abuf\:cy_psoc4_abuf_v1_0
+	GENERIC MAP(cy_registers=>"",
+		needs_dsab=>'0',
+		deepsleep_available=>'0',
+		has_resistor=>'0')
+	PORT MAP(vplus=>Net_538,
+		vminus=>\Opamp_Buffer:Net_9\,
+		vout1=>\Opamp_Buffer:Net_18\,
+		rs_bot=>\Opamp_Buffer:Net_29\,
+		vout10=>\Opamp_Buffer:Net_19\,
+		cmpout=>\Opamp_Buffer:Net_12\);
+\Opamp_Buffer:cy_analog_virtualmux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\Opamp_Buffer:Net_9\,
+		signal2=>Net_662);
+\Opamp_Buffer:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>Net_662,
+		signal2=>\Opamp_Buffer:Net_18\);
+\Opamp_Buffer:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\Opamp_Buffer:Net_29\);
+\StripLights:B_WS2811:dataOut\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:dataOut\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:Net_64\);
+\StripLights:B_WS2811:xferCmpt\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:xferCmpt\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:status_6\);
+\StripLights:B_WS2811:bitCount_2\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:bitCount_2\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:bitCount_2\);
+\StripLights:B_WS2811:state_1\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:state_1\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:state_1\);
+\StripLights:B_WS2811:state_0\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:state_0\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:state_0\);
+\StripLights:B_WS2811:bitCount_1\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:bitCount_1\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:bitCount_1\);
+\StripLights:B_WS2811:bitCount_0\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:bitCount_0\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:bitCount_0\);
+\StripLights:B_WS2811:dpAddr_1\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:dpAddr_1\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:dpAddr_1\);
+\StripLights:B_WS2811:dpAddr_0\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:dpAddr_0\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:dpAddr_0\);
+\StripLights:B_WS2811:pwmCntl\:cy_dsrff
+	PORT MAP(d=>\StripLights:B_WS2811:pwmCntl\\D\,
+		s=>zero,
+		r=>zero,
+		clk=>\StripLights:Net_18\,
+		q=>\StripLights:B_WS2811:pwmCntl\);
+
+END R_T_L;

@@ -1,0 +1,6 @@
+C:\Users\joeri\Desktop\robotic_car_2017\code_volledig\bluetooth_connectie.cydsn\bluetooth_connectie.cyprj|9409f54e-b087-4792-99a3-fb50272d63cd
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|10917ad3-a73d-45fb-8021-a291752ea629
+C:\Users\joeri\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|8fdc8280-3971-4074-8962-366275ac19ed
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e599e272-d53c-4e19-8e44-10f08a353647
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|2d12b116-afee-48d4-84ba-c55b6e8d513e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a974df01-ffbc-4f0b-a24f-93cbe96716f2

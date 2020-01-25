@@ -1,0 +1,7 @@
+C:\Users\guido\Desktop\AN68272_2\UART Bootloader Host\Backup\UART Bootloader Host\UART_Bootloader_Host.cydsn\UART_Bootloader_Host.cyprj|48bcc231-26d7-4502-9216-2b8dc20db83c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|7eb3e5d7-5b8e-4d52-917a-e1bf80b8e753
+C:\Users\guido\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|eb79d1fe-34ad-418c-bb23-f0545b963f29
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a72e9eff-2ad3-4c21-82c2-fe1bfca392eb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|73aeb6b3-6896-4dd8-9b5b-9132cdc453a1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|9ff4e4d5-bfd9-4282-aaa8-54d0b27f8674
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|bda4aa9b-2eb8-4b6f-be01-5eb8bd8119e8

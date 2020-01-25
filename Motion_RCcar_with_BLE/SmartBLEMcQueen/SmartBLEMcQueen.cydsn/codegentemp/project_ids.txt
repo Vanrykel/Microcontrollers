@@ -1,0 +1,7 @@
+C:\Users\kaspe\Documents\PSoC Creator\SmartBLEMcQueen\SmartBLEMcQueen.cydsn\SmartBLEMcQueen.cyprj|3d5ea870-a28d-449e-99ba-1ae6a9563425
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|abcdd2e6-4ee7-4cda-beb0-88a174cc00c1
+C:\Users\kaspe\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|fbbb164d-7251-4e36-909d-88a18ffd6442
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f8ab3635-011f-4694-80f3-37ffb856383e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|91a13723-8731-4532-85eb-4f3e4c0fbb12
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|5c4fb7ac-29af-40b1-88bf-5e3ddf771228
+C:\Users\kaspe\Documents\PSoC Creator\SmartBLEMcQueen\Bootloader.cydsn\Bootloader.cyprj|3bc93150-6429-4ffe-a68b-21ec82fba818

@@ -1,0 +1,8 @@
+D:\Showcase-BLE-CarT-master\Showcase-BLE-CarT-master\Motordriver.cydsn\Motordriver.cyprj|715fd8b6-7a4b-4c0f-95aa-e9009cac21db
+D:\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|cf712875-4d75-4cef-ac8c-33b720b64c59
+C:\Users\krist\OneDrive\Documenten\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|425c6dea-b4c4-4a25-9833-705f17e32f1c
+D:\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a7bde7a8-ec12-4f1a-86ef-d9a623fcea08
+D:\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ffce5f2e-9b5a-4d8d-8580-1295fa4d6733
+D:\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ededeb71-23ee-4948-bf98-9a3b2ac21d1d
+D:\Showcase-BLE-CarT-master\Showcase-BLE-CarT-master\Basic_BLE.cydsn\Basic_BLE.cyprj|2e1603a2-a3b0-4a68-a076-0aa08172a5df
+D:\Showcase-BLE-CarT-master\Showcase-BLE-CarT-master\motor\motor\motoor.cydsn\motoor.cyprj|ea01863c-c40c-4cd4-b97a-dfa261d58894

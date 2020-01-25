@@ -1,0 +1,7 @@
+F:\pxl\MC 2019-2020\ball_balans\pwm test.cydsn\pwm test.cyprj|70750f95-e715-4d87-b02a-57a42aa8c314
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a5a77a34-9b97-42cd-bf61-c9b087976442
+F:\Documenten\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|8118e3f6-0dab-46ba-be42-2496170632f2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|8650a94a-6da0-4102-b312-5f040e4918d9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|56d135c7-ae7b-435c-99d5-a97b4699caa1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e3a9a094-dea5-49aa-94c9-a1fdd21acd0e
+F:\pxl\MC 2019-2020\ball_balans\ultrasoon_test.cydsn\ultrasoon_test.cyprj|c7c39445-38d1-4082-8a77-960d0bd3e28e

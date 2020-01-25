@@ -1,0 +1,23 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2019-12-31T10:34:16Z")
+ (DESIGN "SPI_Only")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "SPI_Only")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT \\SPI\:SCB\\.mosi_m Pin_1\(0\).pin_input (0.000:0.000:0.000))
+    (INTERCONNECT Pin_1\(0\).pad_out Pin_1\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.ff_div_2 \\SPI\:SCB\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT Pin_1\(0\).pad_out Pin_1\(0\)_PAD (0.000:0.000:0.000))
+    (INTERCONNECT Pin_1\(0\)_PAD Pin_1\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

@@ -1,0 +1,9 @@
+C:\Users\Janni\OneDrive\Bureaublad\SpectrumAnalyzer_NeoPixel\SpectrumAnalyzer_NeoPixel.cydsn\SpectrumAnalyzer_NeoPixel.cyprj|47fe101f-b352-4d3e-87f8-826d15ebf3e3
+C:\Users\Janni\OneDrive\Bureaublad\SpectrumAnalyzer_NeoPixel\StripLightLib.cylib\StripLightLib.cyprj|24b3b500-becb-48ef-9c1d-3c29c0735ac4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|3357de31-c618-48b6-838b-6968925de4e1
+C:\Users\Janni\OneDrive\Documenten\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|f56ec918-e3a7-4935-b0c3-66ce6f787ebd
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|18295726-334f-419b-bd61-ded743fae347
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|daa7ad88-8105-408f-84ac-47c8c22e757f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a95fee9d-96a1-4e03-91ae-e1f81d50d59b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|a9ab3566-2b0c-4eb3-8617-0dd3d4270381
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|eced9d9b-8c48-4f0b-9cb5-359c7c557f3f

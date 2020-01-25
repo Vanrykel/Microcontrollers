@@ -1,0 +1,16 @@
+# Design01
+# 2017-12-05 12:07:21Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_location "ClockBlock" m0s8clockblockcell -1 -1 0
+set_io "encoderInputRight(0)" iocell 1 0
+set_io "ledRight(0)" iocell 1 6
+set_io "encoderInputLeft(0)" iocell 1 1
+set_io "ledLeft(0)" iocell 0 3
+set_io "ledForward(0)" iocell 0 2
+set_location "isr_1" interrupt -1 -1 0
+set_location "isr_2" interrupt -1 -1 2

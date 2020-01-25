@@ -1,0 +1,6 @@
+D:\11700639\OneDrive - PXL\PXL 2EA\Sem1\MC\DMX Controller\SPI_Only.cydsn\SPI_Only.cyprj|a897b03e-47a7-4360-83cb-69ad7b41fda5
+C:\Program Files (x86)\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e589059a-313d-4106-9d8e-1b204d7b4e79
+D:\11700639\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|b4d9e1f3-3e3f-4cb4-b3c4-2dbc21b124f7
+C:\Program Files (x86)\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2f3cfcab-73a4-43f2-b46b-7d10d454da15
+C:\Program Files (x86)\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|145b639c-5600-4b78-8007-dba5f55e2a6b
+C:\Program Files (x86)\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|deb6da10-8ccc-4806-8398-cef0c395bbe3

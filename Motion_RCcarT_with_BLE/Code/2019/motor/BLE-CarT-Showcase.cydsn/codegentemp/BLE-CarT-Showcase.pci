@@ -1,0 +1,23 @@
+# BLE-CarT-Showcase
+# 2020-01-03 15:38:50Z
+
+# IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 6
+# IO_7@[IOP=(0)][IoId=(7)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 7
+# IO_0@[IOP=(6)][IoId=(0)] is reserved: KhzXtalEnabled
+dont_use_io iocell 6 0
+# IO_1@[IOP=(6)][IoId=(1)] is reserved: KhzXtalEnabled
+dont_use_io iocell 6 1
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "\I2C_1:sda(0)\" iocell 3 4
+set_io "\I2C_1:scl(0)\" iocell 3 5
+set_io "UltraSone_1_Echo_L(0)" iocell 0 1
+set_io "LED_R_M(0)" iocell 2 6
+set_io "UltraSone_1_Trig(0)" iocell 0 3
+set_io "UltraSone_2_Echo_R(0)" iocell 0 5
+set_io "UltraSone_2_Echo_L(0)" iocell 0 4
+set_io "UltraSone_1_Echo_M(0)" iocell 0 0
+set_io "UltraSone_1_Echo_R(0)" iocell 0 2
+set_io "LED_B_R(0)" iocell 3 7
+set_io "LED_G_L(0)" iocell 3 6

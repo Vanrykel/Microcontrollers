@@ -1,0 +1,6 @@
+F:\Documenten\PSoC Creator\ball_balans\pwm test.cydsn\pwm test.cyprj|6e5c4896-9d57-4e8a-be63-8547a334fda3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|83ce614b-5169-4ff8-a024-3845958b6071
+F:\Documenten\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|83dae8d6-6a6b-488c-a37b-1130a3a0aba4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|788fe317-8d7e-4f46-aeb8-cff8ef5a62ef
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8f3a73c1-a65d-41a3-ad48-424dfc6edb9c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0e04ef36-3163-43f5-9ea1-5ea455b35776

@@ -1,0 +1,20 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2019-12-23T20:33:29Z")
+ (DESIGN "Bootloadable1")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Bootloadable1")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT Green_LED\(0\)_PAD Green_LED\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Pin_StartBootloader\(0\)_PAD Pin_StartBootloader\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

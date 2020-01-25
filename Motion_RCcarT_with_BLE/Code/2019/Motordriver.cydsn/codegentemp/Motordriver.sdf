@@ -1,0 +1,25 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2019-11-26T19:41:45Z")
+ (DESIGN "Motordriver")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Motordriver")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk \\I2C_Master\:SCB_IRQ\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\I2C_Master\:SCB\\.interrupt \\I2C_Master\:SCB_IRQ\\.interrupt (0.000:0.000:0.000))
+    (INTERCONNECT \\I2C_Master\:scl\(0\)\\.fb \\I2C_Master\:SCB\\.i2c_scl (0.000:0.000:0.000))
+    (INTERCONNECT \\I2C_Master\:sda\(0\)\\.fb \\I2C_Master\:SCB\\.i2c_sda (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.ff_div_2 \\I2C_Master\:SCB\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\I2C_Master\:sda\(0\)_PAD\\ \\I2C_Master\:sda\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT \\I2C_Master\:scl\(0\)_PAD\\ \\I2C_Master\:scl\(0\)\\.pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

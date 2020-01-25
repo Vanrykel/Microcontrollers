@@ -1,0 +1,18 @@
+# UART_Bootloader_Host
+# 2017-11-16 14:57:25Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "Pin_Switch(0)" iocell 0 7
+set_io "\LCD_Char:LCDPort(0)\" iocell 2 0
+set_io "\LCD_Char:LCDPort(1)\" iocell 2 1
+set_io "\LCD_Char:LCDPort(2)\" iocell 2 2
+set_io "\LCD_Char:LCDPort(3)\" iocell 2 3
+set_io "\LCD_Char:LCDPort(4)\" iocell 2 4
+set_io "\LCD_Char:LCDPort(5)\" iocell 2 5
+set_io "\LCD_Char:LCDPort(6)\" iocell 2 6
+set_io "Rx(0)" iocell 0 0
+set_io "Tx(0)" iocell 0 1

@@ -1,0 +1,10 @@
+# Bootloadable1
+# 2019-12-23 20:33:28Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "Green_LED(0)" iocell 0 2
+set_io "Pin_StartBootloader(0)" iocell 0 7

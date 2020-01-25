@@ -1,0 +1,6 @@
+C:\Users\Martijn\Documents\ELECTRONICA_ICT_Jaar_2\Microcontrollers\test2 bluetooth\test bleuthooth\bluetooth_module_ble\bluetooth_connectie.cydsn\bluetooth_connectie.cyprj|2c7741d2-b404-4022-88a8-3cf57cc48087
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c93f7821-d1c1-42e9-b765-3ca822aa0885
+C:\Users\Martijn\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|dedfa394-fb37-4dce-83da-170a6e8f9057
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|350f04cd-3a38-49a8-b23b-36aba82ee812
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ff96b2bf-f485-493f-87f1-bed262b5c781
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|58ff4e53-b37f-46b5-a060-85fec8777c5c

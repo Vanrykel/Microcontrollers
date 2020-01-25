@@ -1,0 +1,6 @@
+C:\Users\joeri\Documents\PSoC Creator\Ultrasoon\Ultrasoon.cydsn\Ultrasoon.cyprj|2110d1ab-e084-4739-91d5-9a0cc74a773e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|78f85d98-31de-437f-b792-f00399af0bd8
+C:\Users\joeri\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|b4c6c1db-75c0-4a89-8f59-1caf6c51fbad
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|81febb1f-3fc8-4229-8617-a43c724f4b81
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|38170746-2df3-4609-9a86-7f1848bb5d5c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ec5bebb2-28e8-4069-8fd6-079a27aa9e57

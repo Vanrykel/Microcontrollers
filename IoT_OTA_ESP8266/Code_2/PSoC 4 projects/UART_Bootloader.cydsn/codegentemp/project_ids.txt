@@ -1,0 +1,9 @@
+C:\Users\Tom Mingneau\Desktop\PXL\Microcontrollers\Showcase\UARTBOOTLOADERAN\AN68272\UART Bootloader\PSoC 4 projects\UART_Bootloader.cydsn\UART_Bootloader.cyprj|2f624f79-0354-4fc6-953a-bcfa46ef4984
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2fb4245b-c1c9-4f7d-b2e0-124297cfa57e
+C:\Users\Tom Mingneau\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d3006276-58c3-4f8e-9860-566884993da4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|72a640d9-2fbb-4b7b-8566-a4e89986c043
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|44872876-5c1e-4bbf-b06a-39e143c98b86
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|767d4bef-04fd-46ea-923f-565f01c13708
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|dccb68f3-dfe1-4beb-9b64-a7858795b2e4
+C:\Users\Tom Mingneau\Desktop\PXL\Microcontrollers\Showcase\UARTBOOTLOADERAN\AN68272\UART Bootloader\PSoC 4 projects\Bootloadable2.cydsn\Bootloadable2.cyprj|35491077-e309-41de-b161-be93b06c826e
+C:\Users\Tom Mingneau\Desktop\PXL\Microcontrollers\Showcase\UARTBOOTLOADERAN\AN68272\UART Bootloader\PSoC 4 projects\Bootloadable1.cydsn\Bootloadable1.cyprj|a78ece4b-7309-49a7-8b5a-249f264fc5a9

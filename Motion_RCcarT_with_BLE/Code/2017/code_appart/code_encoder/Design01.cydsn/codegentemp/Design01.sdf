@@ -1,0 +1,27 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2017-12-05T12:07:21Z")
+ (DESIGN "Design01")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.1 Update 1")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Design01")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk isr_1.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk isr_2.clock (0.000:0.000:0.000))
+    (INTERCONNECT encoderInputRight\(0\).fb isr_1.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT encoderInputLeft\(0\).fb isr_2.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT encoderInputRight\(0\)_PAD encoderInputRight\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT ledRight\(0\)_PAD ledRight\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT encoderInputLeft\(0\)_PAD encoderInputLeft\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT ledLeft\(0\)_PAD ledLeft\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT ledForward\(0\)_PAD ledForward\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)
